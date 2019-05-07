@@ -1,0 +1,738 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* MY CODE */
+
+* {
+  text-decoration: none;
+}
+
+body{
+  background-color: lightgrey;
+}
+
+main{
+  padding-top: 100px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.8;
+  width: 100%;
+  height: 100px;
+}
+
+header a:hover {
+  color: #d957d1;
+  font-size: 20px;
+  font-style: oblique;
+  font-stretch: ultra-expanded;
+}
+
+header a:active {
+  color: #d957d1;
+  font-size: 28px;
+  font-style: oblique;
+  font-stretch: ultra-expanded;
+}
+
+header .header-brand img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+header .header-brand {
+  font-family: 'Exo 2';
+  font-size: 24px;
+  font-weight: 900;
+  color: #111;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header nav ul {
+  display: none;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+header nav ul li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0 16px;
+}
+
+header nav ul li a {
+  font-family: 'Exo 2';
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+  color: #1d7f9a;
+  font-size: 28px;
+  font-style: oblique;
+  font-stretch: ultra-expanded;
+  font-weight: bolder;
+}
+
+header nav ul li a:active {
+  color: #1d7f9a;
+  font-size: 17px;
+  font-style: oblique;
+  font-stretch: ultra-expanded;
+  font-weight: bolder;
+}
+
+header .header-cases {
+  display: none;
+}
+
+/*FIRST MEDIA QUERY HEADER*/
+
+@media only screen and (min-width: 1000px) {
+  header .header-brand {
+    margin: 25px 0px;
+    text-align: left;
+    line-height: 38px;
+    padding: 0px 20px 0px 40px;
+    border-right: 3px solid #d957fa;
+    float: left;
+  }
+
+  header .header-brand img:hover{
+    width: 55px;
+    height: 55px;
+  }
+
+  header nav ul {
+    display: block;
+    margin: 20px 0px 0px 20px;
+    float: left;
+  }
+
+  header nav ul li a {
+    line-height: 65px;
+  }
+
+/* contanct button */
+  header .header-cases {
+    display: block;
+    font-family: 'Exo 2';
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 45px;
+    border: 1px solid #d957fa;
+    float: right;
+    margin-right: 40px;
+    margin-top: 30px;
+    padding: 0px 20px;
+  }
+
+
+  header nav a:hover {
+    color: #d957d1;
+    font-size: 28px;
+    font-style: oblique;
+    font-stretch: ultra-expanded;
+    font-weight: bolder;
+  }
+
+  header nav a:active {
+    color: #d957d1;
+    font-size: 30px;
+    font-style: oblique;
+    font-stretch: ultra-expanded;
+    font-weight: bolder;
+  }
+
+}
+
+/*FIRST MEDIA QUERY HEADER END*/
+
+/*INDEX*/
+
+.index-banner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url('images/welcome.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.index-banner h2 {
+  font-family: 'Exo 2';
+  font-size: 60px;
+  line-height: 70px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1 {
+  font-family: 'Exo 2';
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-links div {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+.index-links div:hover {
+  background-color: #1d7f9a;
+}
+
+.index-links div h3 {
+  font-family: 'Exo 2';
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 100px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.index-links div h3:hover {
+  color: #fff;
+}
+
+/*INDEX END*/
+
+
+/*ABOUT*/
+
+.about-banner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: #1d7f9a;
+  display: table;
+}
+
+.about-banner h2 {
+  font-family: 'Exo 2';
+  font-size: 60px;
+  line-height: 70px;
+  color: #111;
+  text-align: center;
+}
+
+.about-banner h1 {
+  font-family: 'Exo 2';
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 40px;
+  color: #111;
+  text-align: center;
+}
+
+/*CONTACT*/
+
+.contact-banner {
+  width: 50%;
+  display: table;
+  margin-left: 130px;
+}
+
+.contact-banner h2 {
+  font-family: 'Exo 2';
+  font-size: 60px;
+  line-height: 70px;
+  color: #111;
+  text-align: center;
+}
+
+.contact-banner h1 {
+  font-family: 'Exo 2';
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 40px;
+  color: #111;
+  text-align: center;
+}
+
+/* SECOND MEDIA QUERY BOXES*/
+
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .index-banner {
+    height: 450px;
+  }
+
+  .index-banner h2 {
+    line-height: 28px;
+  }
+
+  .index-banner h1 {
+    line-height: 75px;
+  }
+
+  .index-links {
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .index-links div {
+    margin: 20px 10px 0px;
+    height: 230px;
+    background-color: #f2f2f2;
+    float: left;
+  }
+
+  .index-boxlink-square {
+    width: calc(25% - 20px) !important;
+  }
+
+  .index-boxlink-rectangle {
+    width: calc(50% - 20px) !important;
+  }
+
+  .index-links div h3 {
+    line-height: 230px;
+  }
+
+  .contact-banner {
+    margin-left: 300px;
+  }
+
+}
+
+/* SECOND MEDIA QUERY BOXES END*/
+
+/*CASES*/
+
+.cases-links  {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.cases-links h2 {
+  font-family: 'Exo 2';
+  font-size: 28px;
+  font-weight: 100;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.cases-links .cases-link{
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+}
+
+#photo-1 {
+  background-image: url(images/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#photo-2 {
+  background-image: url(images/2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#photo-3 {
+  background-image: url(images/3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#photo-4 {
+  background-image: url(images/8.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#photo-5 {
+  background-image: url(images/5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#photo-6 {
+  background-image: url(images/6.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#photo-7 {
+  background-image: url(images/7.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#photo-8 {
+  background-image: url(images/4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#art-1 {
+  background-image: url(art/6.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#art-2 {
+  background-image: url(art/5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#art-3 {
+  background-image: url(assets/9.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#art-5 {
+  background-image: url(art/aziff1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#art-4 {
+  background-image: url(art/Pattern1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#art-6 {
+  background-image: url(art/1.jpg);
+  background-repeat: no-repeat;
+}
+
+#art-7 {
+  background-image: url(art/3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#art-8 {
+  background-image: url(art/4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cases-links .cases-link p {
+  padding-top: 45%;
+  font-family: 'Exo 2';
+  font-size: 24px;
+  font-weight: 100;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*CASES END*/
+
+/*MEDIA QUERY CASES*/
+@media only screen and (min-width: 1000px){
+
+.cases-links .cases-link{
+  float: left;
+  width: 230px;
+  height: 230px;
+  margin: 20px 10px 0px;
+}
+
+}
+/*MEDIA QUERY CASES END*/
+
+/*CASE*/
+
+.case-vid h2 {
+  font-family: 'Exo 2';
+  font-size: 28px;
+  font-weight: 100;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.case-vid img {
+  margin: 0 auto;
+  display: block;
+  padding: 30px 0;
+  width: 470px;
+}
+
+.case-vid article h3 {
+  font-family: 'Exo 2';
+  font-size: 28px;
+  color: #111;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.case-vid article div p {
+  font-family: 'Exo 2';
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 24px;
+  color: #111;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+/*CASE END*/
+
+/*CASE MEDIA QUERY*/
+@media only screen and (min-width: 1000px){
+
+.case-vid img {
+  margin: 0 auto;
+  display: block;
+  padding: 30px 0;
+  width: 800px;
+}
+
+.case-vid article h3 {
+  font-family: 'Exo 2';
+  font-size: 28px;
+  font-weight: bold;
+  color: #111;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.case-vid article div p {
+  font-family: 'Exo 2';
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 24px;
+  color: #111;
+  column-gap: 20px;
+}
+}
+/*CASE MEDIA QUERY END*/
+
+/*FOOTER*/
+
+footer {
+width: calc(100% - 80px);
+padding: 40px 40px;
+margin-top: 20px;
+background-color: #111;
+overflow: hidden;
+}
+
+footer ul {
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+}
+
+footer ul li {
+  display: block;
+  list-style: none;
+}
+
+footer ul li a {
+  font-family: 'Exo 2';
+  font-size: 16px;
+  color: #fff;
+  line-height: 40px;
+}
+
+.footer-links-cases {
+  display: none;
+}
+
+.footer-sm {
+  width: 50px;
+  float: right;
+}
+
+.footer-sm img {
+  width: 100%;
+}
+
+.monogram{
+  display: none;
+}
+
+/*FOOTER END*/
+
+/*THIRD MEDIA QUERY FOOTER*/
+
+@media only screen and (min-width: 1000px) {
+  .footer-links-cases {
+    display: block;
+  }
+
+  .footer-links-cases a:hover {
+  color: #1d7f9a;
+  font-size: 17px;
+  font-style: oblique;
+  font-stretch: ultra-expanded;
+  font-weight: bolder;
+}
+
+  footer ul {
+    padding-right: 30px;
+  }
+.monogram{
+  display: block;
+  padding-left: 250px;
+}
+  footer ul li p {
+    font-family: 'Exo 2';
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+}
+
+/*THIRD MEDIA QUERY FOOTER END*/
